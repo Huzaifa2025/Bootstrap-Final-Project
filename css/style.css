@@ -1,0 +1,65 @@
+.team .btn{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(212, 212, 212);
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+}
+
+.team .btn i{
+    margin-right: 10px;
+}
+
+.team .btn:hover i{
+    animation: icon 0.5s ease-in-out;
+}
+
+@keyframes icon{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.team .btn:hover{
+    width: 120px;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto auto auto;
+}
+
+.work-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work-item.item3 {
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+.item4 {
+    grid-area: 2 / 1 / 4 / 3;
+}
+
+main .contact ul  li:hover a i{
+    animation: icon1 0.1s linear;
+}
+
+@keyframes icon1{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
